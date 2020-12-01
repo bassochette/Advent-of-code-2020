@@ -17,7 +17,7 @@ export const multiplyATwoNumberwithASumOf2020 = (input: number[]): number => {
 }
 
 export const run = async (): Promise<number> => {
-  const inputFile = await fs.readFile(`${__dirname}/input`, 'UTF-8');
+  const inputFile = await fs.readFile(`${__dirname}/input`, 'utf-8');
   const input = inputFile.split('\n').map(x => parseInt(x));
   return multiplyATwoNumberwithASumOf2020(input);
 };
